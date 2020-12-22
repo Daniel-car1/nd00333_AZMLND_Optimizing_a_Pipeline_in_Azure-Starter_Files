@@ -50,6 +50,8 @@ def clean_data(data):
 
     y_df = x_df.pop("y").apply(lambda s: 1 if s == "yes" else 0)
     
+    return x_df, y_df
+    
 
 def main():
     # Add arguments to script
@@ -67,6 +69,9 @@ def main():
 
     accuracy = model.score(x_test, y_test)
     run.log("Accuracy", np.float(accuracy))
+    
+    os.makedirs('./outputs', exist_ok=True)
+    joblib.dump(value=model, filename='./outputs/model.joblib')
 
 if __name__ == '__main__':
     main()
