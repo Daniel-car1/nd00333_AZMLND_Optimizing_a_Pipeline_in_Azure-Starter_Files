@@ -7,8 +7,10 @@ This model is then compared to an Azure AutoML run.
 
 ## Summary
 **In 1-2 sentences, explain the problem statement: e.g "This dataset contains data about... we seek to predict..."**
-
+The provided bankmarketing dataset is an open source csv file.
 **In 1-2 sentences, explain the solution: e.g. "The best performing model was a ..."**
+
+
 
 ## Scikit-learn Pipeline
 **Explain the pipeline architecture, including data, hyperparameter tuning, and classification algorithm.**
