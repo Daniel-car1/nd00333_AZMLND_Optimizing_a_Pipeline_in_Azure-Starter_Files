@@ -7,7 +7,7 @@ This model is then compared to an Azure AutoML run.
 
 ## Summary
 **In 1-2 sentences, explain the problem statement: e.g "This dataset contains data about... we seek to predict..."**
-The provided bankmarketing dataset is an open source csv file. ![GitHub Logo](/images/logo.png)
+The provided bankmarketing dataset is an open source csv file. ![overview](https://github.com/Daniel-car1/nd00333_AZMLND_Optimizing_a_Pipeline_in_Azure-Starter_Files/blob/master/docs/overview.PNG)
 **In 1-2 sentences, explain the solution: e.g. "The best performing model was a ..."**
 
 
