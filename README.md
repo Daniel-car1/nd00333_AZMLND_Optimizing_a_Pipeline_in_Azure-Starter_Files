@@ -10,8 +10,8 @@ This model is then compared to an Azure AutoML run.
 The provided bankmarketing dataset is an open source csv file which has to be analysed by a Scikit-learn Hyperdrive Pipeline and an AutoML approach to predict weather a client subscribes a term deposit or not.
 ![overview](https://github.com/Daniel-car1/nd00333_AZMLND_Optimizing_a_Pipeline_in_Azure-Starter_Files/blob/master/docs/overview.PNG)
 **In 1-2 sentences, explain the solution: e.g. "The best performing model was a ..."**
-The best perorming model was the VotingEnsemble, an AutomatedML approach which gave an accuracy of 0.916.
-| Run type        | Algo.           | Accuracy  | Duration |
+The best perorming model was the VotingEnsemble, an AutomatedML approach which gave an accuracy of 0.916. [saved VotingEnsemble model](https://github.com/Daniel-car1/nd00333_AZMLND_Optimizing_a_Pipeline_in_Azure-Starter_Files/blob/master/AutoMLb55d7c87225.zip)
+| Run type        | Algorithm           | Accuracy  | Duration |
 | ------------- |:-------------:| -----:| ----------:|
 | Hyperdrive      | LinearRegression (SKlearn) | 0.914 | 54s |
 | AutomatedML      | VotingEnsemble      |   0.916 | 1m25s |
