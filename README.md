@@ -7,15 +7,14 @@ This model is then compared to an Azure AutoML run.
 
 ## Summary
 **In 1-2 sentences, explain the problem statement: e.g "This dataset contains data about... we seek to predict..."**
-The provided bankmarketing dataset is an open source csv file which has to be analysed by a Scikit-learn Pipeline and an AutoML approach to predict weather a client subscribes a term deposit or not.
+The provided bankmarketing dataset is an open source csv file which has to be analysed by a Scikit-learn Hyperdrive Pipeline and an AutoML approach to predict weather a client subscribes a term deposit or not.
 ![overview](https://github.com/Daniel-car1/nd00333_AZMLND_Optimizing_a_Pipeline_in_Azure-Starter_Files/blob/master/docs/overview.PNG)
 **In 1-2 sentences, explain the solution: e.g. "The best performing model was a ..."**
 The best perorming model
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+| Run type        | Algo.           | Accuracy  | Duration |
+| ------------- |:-------------:| -----:| ----------:|
+| Hyperdrive      | - | 0.915 | 46s |
+| AutomatedML      | VotingEnsemble      |   0.916 | 1m19s |
 
 
 
