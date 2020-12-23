@@ -20,9 +20,9 @@ The best perorming model was the VotingEnsemble, an AutomatedML approach which g
 
 ## Scikit-learn Pipeline
 **Explain the pipeline architecture, including data, hyperparameter tuning, and classification algorithm.**
-
+The Scikit-learn Pipeline followes the CRIP-DM stages and tasks like importing data to obtain a editable dataset, cleaning and filtering data, tuning the Hyperparameters regularization strength and maximal number of iterations using Hyperdrive and classify using linear regression.
 **What are the benefits of the parameter sampler you chose?**
-
+RandomParameterSampling, a parameter sampler which supports disrcrete and continuous hyperameters. Hyperparamerters are randomly selected from the defined search space.
 **What are the benefits of the early stopping policy you chose?**
 Using the BanditPolicy - an early stopping policy - to terminate badly performing runs. This algorithm can be adusted by the parameters evaluation interval and slack factor. 
 ## AutoML
