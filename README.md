@@ -39,11 +39,17 @@ AutoML is a machine learning technology to train and tune a model using the targ
 
 ## Pipeline comparison
 **Compare the two models and their performance. What are the differences in accuracy? In architecture? If there was a difference, why do you think there was one?**
-
+The accuracy obtained by the Scikit-learn pipeline with Hyperdrive hyperparameter tuning is 0.914. Whereas, the accuracy obtained by the best AutoMl model VotingEnsemble reaches 0.916, both values are quite similar. Deviatins result from the different architectures, the Scikit-learn pipline uses the linear regression classification algorithm, whereas AutoML tests a pool of different classification algorithms.
+The AutoML is a useful approach, because it tests different algorithms.
 
 ## Future work
 **What are some areas of improvement for future experiments? Why might these improvements help the model?**
+(i)  Cleaning the data more precise
+(ii) For Hyperdrive: improving the parameter sampler
+(iii) Update the clean_data function to obtain pandas datasets and tablular dataset
 
 ## Proof of cluster clean up
 **If you did not delete your compute cluster in the code, please complete this section. Otherwise, delete this section.**
+![AutoML](https://github.com/Daniel-car1/nd00333_AZMLND_Optimizing_a_Pipeline_in_Azure-Starter_Files/blob/master/docs/Delete_code.PNG)
+![AutoML](https://github.com/Daniel-car1/nd00333_AZMLND_Optimizing_a_Pipeline_in_Azure-Starter_Files/blob/master/docs/Delete.PNG)
 **Image of cluster marked for deletion**
