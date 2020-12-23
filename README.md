@@ -44,9 +44,9 @@ The AutoML is a useful approach, because it tests different algorithms.
 
 ## Future work
 **What are some areas of improvement for future experiments? Why might these improvements help the model?**
-(i)  Cleaning the data more precise
-(ii) For Hyperdrive: improving the parameter sampler
-(iii) Update the clean_data function to obtain pandas datasets and tablular dataset
+i.  Cleaning the data more precise
+ii. For Hyperdrive: improving the parameter sampler
+iii. Update the clean_data function to obtain pandas datasets and tablular dataset
 
 ## Proof of cluster clean up
 **If you did not delete your compute cluster in the code, please complete this section. Otherwise, delete this section.**
