@@ -46,9 +46,9 @@ The AutoML is a useful approach, because it tests different algorithms.
 ![AutoML](https://github.com/Daniel-car1/nd00333_AZMLND_Optimizing_a_Pipeline_in_Azure-Starter_Files/blob/master/docs/Delete.PNG)
 
 ## Sources
-https://www.udacity.com/
-https://docs.microsoft.com/en-us/python/api/azureml-train-core/azureml.train.hyperdrive.banditpolicy?view=azure-ml-py
-https://docs.microsoft.com/en-us/azure/machine-learning/how-to-tune-hyperparameters
-https://docs.microsoft.com/en-us/azure/machine-learning/how-to-create-register-datasets?WT.mc_id=AI-MVP-5003930#create-a-dataset-from-pandas-dataframe
-https://docs.microsoft.com/en-us/azure/machine-learning/tutorial-auto-train-models
+* https://www.udacity.com/
+* https://docs.microsoft.com/en-us/python/api/azureml-train-core/azureml.train.hyperdrive.banditpolicy?view=azure-ml-py
+* https://docs.microsoft.com/en-us/azure/machine-learning/how-to-tune-hyperparameters
+* https://docs.microsoft.com/en-us/azure/machine-learning/how-to-create-register-datasets?WT.mc_id=AI-MVP-5003930#create-a-dataset-from-pandas-dataframe
+* https://docs.microsoft.com/en-us/azure/machine-learning/tutorial-auto-train-models
 
