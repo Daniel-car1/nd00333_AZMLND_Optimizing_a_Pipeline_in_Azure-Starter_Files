@@ -22,6 +22,7 @@ The Scikit-learn Pipeline followes the CRIP-DM stages and tasks like importing d
 * '--mat_iter', describes the maximum number of iterations, taken from the solvers to converge.
 
 *RandomParameterSampling*, a random parameter sampler which supports disrcrete like uniform and continuous like choice hyperameters. Hyperparamerters are randomly selected from the defined search space and early termination of low-performance runs is supported. Compared to GridParameterSampling, an other parameter sampler which supports only descrete hyperparameters. For more improvements, random sampling can be used for inital hyperparameter search and then refine it using Bayesion sampling, which picks samples based on how previous samples performed, so that new samples improve the primary metric. 
+
 Using the *BanditPolicy* - an early stopping policy - to terminate badly performing runs. This algorithm can be adusted by the parameters evaluation interval and slack factor. A run that does not fall within the slack factor or slack amount of the evaluation metric with respect to the best performing run will be terminated.
 
 * slack_factor: The amount of slack allowed with respect to the best performing training run. This factor specifies the slack as a ratio.
