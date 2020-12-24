@@ -24,6 +24,8 @@ Hyperdrive achieved an accuracy of 0.9144 with the best fitted parameters for th
 ## AutoML
 AutoML is a machine learning technology to train and tune a model using the target metric for a dataset to find the best fitting model. Due to the task, the AutoML configuration provides the classification task and accuracy as primary metric to compare the best AutoML model with the Scikit-learn Pipeline. Several classification algorithms like LogisticRegression, RandomForest etc. were tested. The best fitting classification algorithm VotingEnsemble reached an accuracy of 0.9157 after an duration of 1m25s.
 ![AutoML](https://github.com/Daniel-car1/nd00333_AZMLND_Optimizing_a_Pipeline_in_Azure-Starter_Files/blob/master/docs/AutoML_algos.PNG)
+VotingEnsemble is a weighted superposition of classification algorithms, called ensembled_algorithms ('XGBoostClassifier','LightGBM' and 'RandomForest') with the corresponding ensemble_weights (0.0833, 0.5, 0.1666, etc.). More detailed inforamtion can be obtained in [VotingEnsemble_Raw JSON](https://github.com/Daniel-car1/nd00333_AZMLND_Optimizing_a_Pipeline_in_Azure-Starter_Files/blob/master/EnsembleV_RawJSON.json) and in the following slide. 
+![AutoML](https://github.com/Daniel-car1/nd00333_AZMLND_Optimizing_a_Pipeline_in_Azure-Starter_Files/blob/master/docs/RawJSON_Ensemble_AutoML.PNG)
 
 
 ## Pipeline comparison
