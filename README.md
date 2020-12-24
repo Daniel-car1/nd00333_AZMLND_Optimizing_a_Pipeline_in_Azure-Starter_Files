@@ -17,7 +17,9 @@ The best perorming model was the VotingEnsemble, an AutomatedML approach which g
 ## Scikit-learn Pipeline
 The Scikit-learn Pipeline followes the CRIP-DM stages and tasks like importing data to obtain a editable dataset, cleaning and filtering data, tuning the Hyperparameters regularization strength and maximal number of iterations using Hyperdrive and classify using linear regression.
 RandomParameterSampling, a parameter sampler which supports disrcrete like uniform and continuous like choice hyperameters. Hyperparamerters are randomly selected from the defined search space.
-Using the BanditPolicy - an early stopping policy - to terminate badly performing runs. This algorithm can be adusted by the parameters evaluation interval and slack factor. 
+Using the BanditPolicy - an early stopping policy - to terminate badly performing runs. This algorithm can be adusted by the parameters evaluation interval and slack factor. A run that does not fall within the slack factor or slack amount of the evaluation metric with respect to the best performing run will be terminated.
+* slack_factor: The amount of slack allowed with respect to the best performing training run. This factor specifies the slack as a ratio.
+* evaluation_interval: An optional parameter, which describes the frequency for applying the policy.
 Hyperdrive achieved an accuracy of 0.9144 with the best fitted parameters for the regularization strength '--C' of 0.7386 and the maximal number of iterations '--max_iter' of 200.
 ![hyperdrive](https://github.com/Daniel-car1/nd00333_AZMLND_Optimizing_a_Pipeline_in_Azure-Starter_Files/blob/master/docs/Hyperdrive.PNG)
 
@@ -36,8 +38,11 @@ The AutoML is a useful approach, because it tests different algorithms.
 * Cleaning the data more precise
 * Improving the parameter sampler
 * Update the clean_data function to obtain pandas datasets and tablular dataset
+* Try out BayesianParameter Sampling Technique which intelligently picks the next sample of hyperparameters, based on how the previous samples performed, such that the new sample improves the reported primary metric.
 
 ## Proof of cluster clean up
 ![AutoML](https://github.com/Daniel-car1/nd00333_AZMLND_Optimizing_a_Pipeline_in_Azure-Starter_Files/blob/master/docs/Delete_code.PNG)
 ![AutoML](https://github.com/Daniel-car1/nd00333_AZMLND_Optimizing_a_Pipeline_in_Azure-Starter_Files/blob/master/docs/Delete.PNG)
 
+## Sources
+https://www.udacity.com/
