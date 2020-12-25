@@ -44,9 +44,9 @@ Using the *BanditPolicy* - an early stopping policy - to terminate badly perform
 The explained best AutoML generated model generated the following parameters (marked with blue in the next image):
 * min_sample_leaf=0.01; helps to avoid overfitting.
 * min_sample_split=0.01; can create arbitrary small leaves, while min_sample_leaf guarantees a minimum number of samples in a leave.
-* min_weight_fraction_leaf=0.0;
-* n_estimators=25;
-* n_jobs=1;
+* min_weight_fraction_leaf=0.0; describes the minimum weighted fraction of the sum total of weights (of all the input samples) required to be at a leaf node.
+* n_estimators=25; describes the number of trees to be used.
+* n_jobs=1; number of jobs.
 
 ![AutoML](https://github.com/Daniel-car1/nd00333_AZMLND_Optimizing_a_Pipeline_in_Azure-Starter_Files/blob/master/docs/AutoML_parameter2.PNG)
 
