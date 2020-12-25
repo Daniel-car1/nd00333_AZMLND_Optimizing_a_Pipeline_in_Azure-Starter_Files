@@ -41,6 +41,14 @@ Using the *BanditPolicy* - an early stopping policy - to terminate badly perform
 
 ![AutoML](https://github.com/Daniel-car1/nd00333_AZMLND_Optimizing_a_Pipeline_in_Azure-Starter_Files/blob/master/docs/RawJSON_Ensemble_AutoML.PNG)
 
+The explained best AutoML generated model generated the following parameters (marked with blue in the next image):
+* min_sample_leaf=0.01; helps to avoid overfitting.
+* min_sample_split=0.01; can create arbitrary small leaves, while min_sample_leaf guarantees a minimum number of samples in a leave.
+* min_weight_fraction_leaf=0.0;
+* n_estimators=25;
+* n_jobs=1;
+
+![AutoML](https://github.com/Daniel-car1/nd00333_AZMLND_Optimizing_a_Pipeline_in_Azure-Starter_Files/blob/master/docs/AutoML_parameter2.PNG)
 
 ## Pipeline comparison
 The accuracy obtained by the Scikit-learn pipeline with Hyperdrive hyperparameter tuning is 0.914. Whereas, the accuracy obtained by the best AutoMl model VotingEnsemble reaches 0.916, both values are quite similar. Deviatins result from the different architectures, the Scikit-learn pipline uses the logistic regression classification algorithm, whereas AutoML tests a pool of different classification algorithms.
@@ -65,4 +73,5 @@ Deleting the cluster in the notebook.
 * https://docs.microsoft.com/en-us/azure/machine-learning/how-to-create-register-datasets?WT.mc_id=AI-MVP-5003930#create-a-dataset-from-pandas-dataframe
 * https://docs.microsoft.com/en-us/azure/machine-learning/tutorial-auto-train-models
 * https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html
+* https://stackoverflow.com/
 
